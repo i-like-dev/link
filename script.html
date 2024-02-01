@@ -1,0 +1,16 @@
+document.getElementById('navigateButton').addEventListener('click', function() {
+    var number = document.getElementById('numberInput').value;
+    var links = {
+        '57214': 'https://docs.google.com/forms/d/e/1FAIpQLSc1WRo_mxMkSJVFDhPzdOUnNtincOZKRO9iG1ATNXdwa1wL4w/viewform?usp=pp_url&entry.530232464=57214',
+        '32241': 'https://docs.google.com/forms/d/e/1FAIpQLSc1WRo_mxMkSJVFDhPzdOUnNtincOZKRO9iG1ATNXdwa1wL4w/viewform?usp=pp_url&entry.530232464=32241',
+        '23073': 'https://docs.google.com/forms/d/e/1FAIpQLSc1WRo_mxMkSJVFDhPzdOUnNtincOZKRO9iG1ATNXdwa1wL4w/viewform?usp=pp_url&entry.530232464=23073',
+        '12846': 'https://docs.google.com/forms/d/e/1FAIpQLSc1WRo_mxMkSJVFDhPzdOUnNtincOZKRO9iG1ATNXdwa1wL4w/viewform?usp=pp_url&entry.530232464=12846',
+        // 在這裡添加更多數字和對應的連結
+    };
+
+    if (links[number]) {
+        window.location.href = links[number];
+    } else {
+        alert('未找到對應的連結');
+    }
+});
